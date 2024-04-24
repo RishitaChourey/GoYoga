@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your daily dose of Fitness!</title>
+<style>
+  #container {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Add padding */
+  }
+  #videoElement, #referenceImage {
+    max-width: 50%;
+    height: auto;
+    margin: 0 10px; /* Add margin between video and image */
+  }
+</style>
+</head>
+<body>
+<h1>Your daily dose of Fitness!</h1>
+<div id="container">
+  <img id="videoElement" src="{{ url_for('video_feed') }}" alt="Processed Video Stream">
+  <img id="referenceImage" src="C:\Users\DELL\Downloads\userflow-diagram (2).png" alt="Reference Image">
+</div>
+</body>
+</html>
